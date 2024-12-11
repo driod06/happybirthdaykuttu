@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adventure of Love</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="C:\Users\Dan\Desktop\Webpage\Happybirthday\style.css"> </head>
+<body>
+
+  <video autoplay muted loop class="video-background">
+    <source src="C:\Users\Dan\Desktop\Webpage\Happybirthday\autumn-river-pixel-moewalls-com.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div id="intro">
+    <h1>Happy Birthday, Chakkare Muthee!</h1>
+    <p>Your mission is to navigate through memories and solve clues to unlock the treasure.</p>
+    <button onclick="startGame()">Start Your Adventure</button>
+  </div>
+
+  <div id="ready" class="ready-section">
+    <h2>Are You Excited???</h2>
+    <img src="C:\Users\Dan\Desktop\Webpage\Happybirthday\ready-image.jpg" alt="Are you ready?" width="250" border="5">  <button onclick="startClue()">Yes, Let's Begin!</button>
+  </div>
+
+  <div id="clue1" class="clue">
+    <h2>Clue #1</h2>
+    <p>"Where did we first meet each other?? (can't get this wrong, right?)"</p>
+    <input type="text" id="answer1" placeholder="Type your answer here" />
+    <button onclick="checkAnswer1()">Submit</button>
+    <p id="response1"></p>
+  </div>
+
+  <div id="puzzle" class="puzzle-section">
+    <h2>In which am I the Happiest?</h2>
+    <p>Look at the pictures and choose the correct answer below!</p>
+
+    <div class="image-row">
+      <img src="C:\Users\Dan\Desktop\Webpage\Happybirthday\pic1.jpg" alt="Photo 1">
+      <img src="C:\Users\Dan\Desktop\Webpage\Happybirthday\pic2.jpg" alt="Photo 2">
+      <img src="C:\Users\Dan\Desktop\Webpage\Happybirthday\pic3.jpg" alt="Photo 3">
+    </div>
+
+    <div id="mcq" class="mcq-options">
+      <button class="mcq-option" onclick="checkAnswer('A')">A) Only A</button>
+      <button class="mcq-option" onclick="checkAnswer('B')">B) Only B</button>
+      <button class="mcq-option" onclick="checkAnswer('C')">C) Only C</button>
+      <button class="mcq-option" onclick="checkAnswer('D')">D) All of the Above</button>
+    </div>
+    <p id="puzzle-response"></p>
+  </div>
+
+  <div id="game" class="game-section">
+    <h2>Pop the Balloons!</h2>
+    <div id="balloon-container"></div>
+    <p id="game-status"></p>
+  </div>
+
+  <div id="final" class="final-message">
+    <h2>Happy Birthday ente muthee!</h2>
+    <p>May you have an awesome year ❤️</p>
+    <img src="C:\Users\Dan\Desktop\Webpage\Happybirthday\final-image.jpg" width="250" height="350" border="3"> </div>
+
+  <script src="C:\Users\Dan\Desktop\Webpage\Happybirthday\script.js"></script>
+</body>
+</html>
