@@ -45,7 +45,7 @@ body {
 h1, h2 {
   margin-top: 20px;
   text-shadow: 3px 3px 0 #000, 0 0 25px #f0e68c, 0 0 5px #f0e68c; /* Beige glow */
-  font-size: 36px; /* Reduced font size */
+  font-size: 36px;
   font-family: 'Press Start 2P', cursive;
   color: #fff;
 }
@@ -144,23 +144,29 @@ h1, h2, p {
   text-shadow: 3px 3px 0 #000, 0 0 25px #f0e68c, 0 0 5px #f0e68c; /* Beige glow */
   font-family: 'Press Start 2P', cursive;
   color: #fff;
-  font-size: 18px; /* Reduced font size */
+  font-size: 18px;
 }
 
 /* Image Styling */
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
 .image-row img {
-  border: 3px solid #fff;
-  box-shadow: 4px 4px 10px #000;
+  width: 30%;
+  height: auto;
 }
 
 /* MCQ options */
 .mcq-option {
   margin: 10px;
-  padding: 10px;
+  padding: 10px 20px;
   border: 2px solid #fff;
   background: #000;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
   text-shadow: 2px 2px #000;
   transition: all 0.2s ease;
@@ -169,19 +175,3 @@ h1, h2, p {
 
 .mcq-option:hover {
   background-color: #333;
-  transform: scale(1.1);
-}
-
-/* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-  /* ...other media query styles... */
-
-  /* Center text vertically and horizontally */
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-}
