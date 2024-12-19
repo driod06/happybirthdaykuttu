@@ -22,11 +22,12 @@ function checkAnswer1() {
 }
 
 function checkAnswer(answer) {
-  if (answer === 'D') {
+  if (answer === "D") {
     document.getElementById("puzzle-response").textContent = "Correct! Moving to the final treasure!";
     setTimeout(() => {
       document.getElementById("puzzle").style.display = "none";
-      startBalloonGame();
+      document.getElementById("game").style.display = "block"; // Show game section
+      startBalloonGame(); // Start the balloon game
     }, 2000);
   } else {
     document.getElementById("puzzle-response").textContent = "Oops! Try again!";
@@ -35,7 +36,7 @@ function checkAnswer(answer) {
 
 function startBalloonGame() {
   const balloonContainer = document.getElementById("balloon-container");
-  balloonContainer.innerHTML = "";
+  balloonContainer.innerHTML = ""; // Clear existing balloons
 
   for (let i = 0; i < 10; i++) {
     const balloon = document.createElement("div");
@@ -47,11 +48,11 @@ function startBalloonGame() {
 
 function popBalloon(event) {
   const balloon = event.target;
-  balloon.style.visibility = "hidden";
+  balloon.style.visibility = "hidden"; // Hide the popped balloon
 
   const remainingBalloons = document.querySelectorAll(".balloon:not([style*='visibility: hidden;'])");
   if (remainingBalloons.length === 0) {
     document.getElementById("game").style.display = "none";
-    document.getElementById("final").style.display = "block";
+    document.getElementById("final").style.display = "block"; // Show the final message
   }
 }
