@@ -20,28 +20,28 @@
         <button onclick="startGame()">Start Your Adventure</button>
     </div>
 
-    <div id="ready" class="ready-section">
+    <div id="ready" class="ready-section" style="display: none;">
         <h2>Are You Excited???</h2>
-        <img src="images/WhatsApp_Image_2024-12-10_at_11.28.19_PM.jpeg" alt="Are you ready?" width="250" border="5"> 
+        <img src="images/WhatsApp_Image_2024-12-10_at_11.28.19_PM.jpeg" alt="Are you ready?" width="250" style="border: 5px solid;"> 
         <button onclick="startClue()">Yes, Let's Begin!</button>
     </div>
 
-    <div id="clue1" class="clue">
+    <div id="clue1" class="clue" style="display: none;">
         <h2>Clue #1</h2>
         <p>"Where did we first meet each other?? (can't get this wrong, right?)"</p>
-        <input type="text" id="answer1" placeholder="Type your answer here" />
+        <input type="text" id="answer1" placeholder="Type your answer here">
         <button onclick="checkAnswer1()">Submit</button>
         <p id="response1"></p>
     </div>
 
-    <div id="puzzle" class="puzzle-section">
+    <div id="puzzle" class="puzzle-section" style="display: none;">
         <h2>In which am I the Happiest?</h2>
         <p>Look at the pictures and choose the correct answer below!</p>
 
         <div class="image-row">
-            <img src="images/collage1.jpg" alt="Photo 1"> 
-            <img src="images/collage2.jpg" alt="Photo 2">
-            <img src="images/collage3.jpg" alt="Photo 3">
+            <img src="images/collage1.jpg" alt="Photo 1" width="150"> 
+            <img src="images/collage2.jpg" alt="Photo 2" width="150">
+            <img src="images/collage3.jpg" alt="Photo 3" width="150">
         </div>
 
         <div id="mcq" class="mcq-options">
@@ -53,16 +53,16 @@
         <p id="puzzle-response"></p>
     </div>
 
-    <div id="game" class="game-section">
+    <div id="game" class="game-section" style="display: none;">
         <h2>Pop the Balloons!</h2>
         <div id="balloon-container"></div>
         <p id="game-status"></p>
     </div>
 
-    <div id="final" class="final-message">
+    <div id="final" class="final-message" style="display: none;">
         <h2>Happy Birthday ente muthee!</h2>
         <p>I love you sooooo much chakkare ❤️</p>
-        <img src="images/20241112_132556.jpg" width="250" height="350" border="3">
+        <img src="images/20241112_132556.jpg" alt="Final Message Image" width="250" height="350" style="border: 3px solid;">
     </div>
 
     <script src="script/script.js"></script>
